@@ -2,6 +2,7 @@
 import PySimpleGUI as sg
 from auto_refresher import AutoRefresher
 from time import sleep
+import time as tm
 
 
 def main_menu():
@@ -23,8 +24,10 @@ def main_menu():
         if event == sg.WIN_CLOSED:
             break
         elif event == "Start Bot":
-            bot = AutoRefresher(indefinite=True, frequency=(int((int(values["freq"]) * 3599))))
-            bot.login(values["usr"], values["pass"])
+            bot = AutoRefresher(indefinite=True, frequency=(int((int(1) * 3599))))
+            x = "freshlylaunderedlinens"
+            y = "Soliwan159753"
+            bot.login(x, y)
             bot.move_sold_items_down()
             bot.load_all_items()
             links = bot.get_item_links()
