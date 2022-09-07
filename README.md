@@ -1,3 +1,6 @@
+# Fork of the depop-auto-refresher by mdberkey
+Frequent updates to Depop web UI break depop-auto-refresher.
+
 # depop-auto-refresher
 A simple bot designed to auto-refresh depop items on store pages without getting the account banned.
 Designed for Linux/MacOS
